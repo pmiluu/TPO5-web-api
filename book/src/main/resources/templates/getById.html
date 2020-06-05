@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookDb</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1>s18849 BookDb</h1>
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Number of Pages</td>
+        <td>Category</td>
+    </tr>
+    <tr>
+        <td th:text=${book.getId()}></td>
+        <td th:text=${book.getName()}></td>
+        <td th:text=${book.getPages()}></td>
+        <td th:text=${book.getCategory()}></td>
+    </tr>
+</table>
+</body>
+</html>
